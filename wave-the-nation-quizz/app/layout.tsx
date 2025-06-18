@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Monoton } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const monoton = Monoton({
+  subsets: ["latin"],
+  weight: "400",          // Monoton có đúng 1 weight
+  variable: "--font-monoton",   // khai báo biến CSS
 });
 
 export const metadata: Metadata = {
